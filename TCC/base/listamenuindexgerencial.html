@@ -1,0 +1,97 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/projeto\principal.php">REISINGER CALÇADOS</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			
+			<!-- Início MENU -->
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Calçado&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="/projeto\calcado\fadd_cal.php">Cadastrar</a></li>
+						<li><a href="/projeto\calcado\lista_cal.php">Lista</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Fornecedor&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="/projeto\fornecedor\fadd_forn.php">Cadastrar</a></li>
+						<li><a href="/projeto\fornecedor\lista_forn.php">Lista</a></li>
+					</ul>
+				</li>
+                
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recibo&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="/projeto\recibo\fadd_rec.php">Cadastrar</a></li>
+						<li><a href="/projeto\recibo\lista_rec.php">Lista</a></li>
+					</ul>
+				</li>
+                
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pedidos&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					<li><a href="/projeto\pedido\lista_ped.php">Lista dos Pedidos</a></li>
+					</ul>
+				</li>
+                
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Funcionários&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					<li><a href="/projeto\funcionario\fadd_func.php">Cadastrar</a></li>
+					<li><a href="/projeto\funcionario\lista_func.php">Lista</a></li>
+					</ul>
+				</li>
+                
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuários&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					<li><a href="/projeto\usuario\fadd_usu.php">Cadastrar</a></li>
+					<li><a href="/projeto\usuario\lista_usu.php">Lista</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Ações&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                        <li><a href="/projeto\pedido\fadd_ped.php">Pedido</a></li>
+						<li><a href="/projeto\entrada\entrada.php">Entrada</a></li>
+                        <li><a href="/projeto\controle_vendas\insert_recibo.php">Venda</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatórios&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="/projeto\relatorio\rrecnum_ped\fil_recnum.php">Itens por Pedido</a></li>
+						<li><a href="/projeto\relatorio\rrecnum_all_ped\fil_recnum_all.php">Todas os Itens/Pedido-Período</a></li>
+						<li><a href="/projeto\relatorio\rrecnum_ent\fil_recnum.php">Entrada por Recibo</a></li>
+						<li><a href="/projeto\relatorio\rrecnum_all_ent\fil_recnum_all.php">Todas as Entradas/Recibo-Período</a></li>
+                        <li><a href="/projeto\relatorio\rrecnum_saida\fil_recnum.php">Venda por Recibo</a></li>
+                        <li><a href="/projeto\relatorio\rrecnum_all_saida\fil_recnum_all.php">Todas as Vendas/Recibo-Período</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<a>GERENCIAL</a>
+				</li>
+				
+				<li>
+					<a><?php echo $_SESSION['UsuarioNome'];  ?></a>
+				</li>
+				
+				<li>
+					<a class="glyphicon glyphicon-user"></a>
+				</li>
+				
+				<li>
+                    <a href="/projeto\base\encerrar.php" class="btn btn-danger"><span class='glyphicon glyphicon-log-out'></span></a>
+				</li>
+			</ul>
+			<!-- Fim MENU -->
+			
+		</div>
+	</div>
+</nav>

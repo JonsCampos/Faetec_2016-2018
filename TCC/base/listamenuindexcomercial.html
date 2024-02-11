@@ -1,0 +1,41 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/projeto\principal.php">REISINGER CALÇADOS</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			
+			<!-- Início MENU -->
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li>
+                    <a href="/projeto\controle_vendas\saida.php">Venda</a>
+				</li>
+
+                <li>
+				    <a>COMERCIAL</a>
+				</li>
+                
+                <li>
+					<a><?php echo $_SESSION['UsuarioNome'];  ?></a>
+				</li>
+				
+				<li>
+					<a class="glyphicon glyphicon-user"></a>
+				</li>
+				
+				<li>
+					<a href="/projeto\base\encerrar.php" class="btn btn-danger"><span class='glyphicon glyphicon-log-out'></a>
+				</li>
+			</ul>
+			<!-- Fim MENU -->
+			
+		</div>
+	</div>
+</nav>

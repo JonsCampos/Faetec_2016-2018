@@ -1,0 +1,59 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/projeto\principal.php">REISINGER CALÇADOS</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			
+			<!-- Início MENU -->
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Calçado&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="/projeto\calcado\fadd_cal.php">Cadastrar</a></li>
+						<li><a href="/projeto\calcado\lista_cal.php">Lista</a></li>
+					</ul>
+				</li>
+                
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Fornecedor&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="/projeto\fornecedor\fadd_forn.php">Cadastrar</a></li>
+						<li><a href="/projeto\fornecedor\lista_forn.php">Lista</a></li>
+					</ul>
+				</li>
+                
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pedidos&nbsp<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					<li><a href="/projeto\pedido2\fadd_ped.php">Cadastrar Pedidos</a></li>
+					<li><a href="/projeto\pedido2\lista_ped.php">Lista dos Pedidos</a></li>
+                        <li><a href="/projeto\ipedido\ipedido.php">Calçados do Pedido</a></li>
+					</ul>
+				</li>
+				
+                <li>
+					<a>COMPRAS</a>
+				</li>
+                
+                <li>
+					<a><?php echo $_SESSION['UsuarioNome'];  ?></a>
+				</li>
+				
+				<li>
+					<a class="glyphicon glyphicon-user"></a>
+				</li>
+				
+				<li>
+					<a href="/projeto\base\encerrar.php" class="btn btn-danger"><span class='glyphicon glyphicon-log-out'></a>
+				</li>
+			</ul>
+			<!-- Fim MENU -->
+			
+		</div>
+	</div>
+</nav>
